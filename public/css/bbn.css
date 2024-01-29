@@ -1,0 +1,482 @@
+body {
+  font-family: "gotham";
+}
+
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../images/loader-64x/Preloader_8.gif) center no-repeat #fff;
+}
+
+a {
+  color: #F26E34;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  color: #cc4309;
+}
+
+.navbar-custom-bbn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #404040;
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 40%;
+  transform: translatex(-40%);
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-nav li {
+  padding-left: 5px;
+}
+
+.navbar-nav li > a {
+  font-family: "Gotham Bold";
+  text-transform: capitalize;
+  color: #5F5F5F !important;
+  text-decoration: none;
+}
+.navbar-nav li > a:hover, .navbar-nav li > a:focus {
+  border-bottom: 2px solid #F26E34;
+}
+
+.navbar-nav li.active > a {
+  color: #F26E34;
+  border-bottom: 2px solid #F26E34;
+}
+
+.navbar-toggler {
+  background: #F26E34;
+}
+
+.logo {
+  width: 200px;
+}
+
+.section {
+  position: fixed;
+  width: 100%;
+  height: calc(100% - (82px + 85px));
+  top: 82px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header.masthead, header.masthead-reduced {
+  position: relative;
+  overflow: hidden;
+}
+header.masthead img, header.masthead-reduced img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  max-width: initial;
+  object-fit: cover;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+header.masthead .masthead-content, header.masthead-reduced .masthead-content {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+header.masthead .masthead-content .masthead-heading, header.masthead-reduced .masthead-content .masthead-heading {
+  font-size: 4rem;
+  font-family: "Gotham Bold";
+  text-transform: uppercase;
+  color: #F26E34;
+}
+header.masthead .masthead-content .masthead-heading span, header.masthead-reduced .masthead-content .masthead-heading span {
+  color: white;
+}
+
+header.masthead {
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+}
+
+header.masthead-reduced {
+  padding-top: calc(5rem + 50px);
+  padding-bottom: 7rem;
+}
+
+.content-left-col {
+  background: #e0dfdf;
+  margin-top: -50px;
+  max-height: calc(100% - 400px);
+  overflow: scroll;
+  padding: 30px 30px 0px 30px;
+  text-align: right;
+}
+.content-left-col h3 {
+  font-family: "Gotham Bold";
+  line-height: 22px;
+  font-size: 22px;
+}
+.content-left-col p {
+  font-size: 0.9em;
+  padding-top: 20px;
+}
+.content-left-col a {
+  display: inline-block;
+  font-style: oblique;
+}
+
+.content-right-col {
+  overflow: auto;
+  max-height: calc(100% - 400px);
+  overflow: scroll;
+  padding: 80px 50px 0px 50px;
+}
+.content-right-col p {
+  font-size: 14px;
+  line-height: 22px;
+}
+.content-right-col a {
+  display: inline-block;
+  font-style: oblique;
+}
+
+.country-list {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  z-index: 1;
+}
+
+.list-p p {
+  text-align: left;
+  color: #F26E34;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.section-gray {
+  background: #f5f5f5;
+  padding: 0;
+}
+.section-gray h2 {
+  font-family: "Gotham Bold";
+  font-size: 20px;
+}
+.section-gray p {
+  font-size: 0.9em;
+}
+
+.title1 {
+  color: #ffc20e;
+}
+
+.title2 {
+  color: #faa61a;
+}
+
+.title3 {
+  color: #f68b1e;
+}
+
+.title4 {
+  color: #f36d21;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 85px;
+  line-height: 85px;
+  /* Vertically center the text there */
+  background: #F26E34;
+  color: white;
+  text-align: center;
+  border-bottom: 20px solid #404040;
+}
+.footer a {
+  display: inline-block;
+  font-style: oblique;
+  color: white;
+  text-decoration: underline;
+}
+
+.bbn-col {
+  background-color: #F26E34;
+  color: white;
+  font-family: "Gotham Bold";
+}
+
+.bbn-icon {
+  display: inline-block;
+  width: 220px;
+  height: auto;
+}
+
+.subscribe-col {
+  background-color: #e0dfdf;
+  display: flex;
+}
+.subscribe-col input, .subscribe-col button {
+  font: inherit;
+  border: 0;
+  margin: 0;
+  font-family: "Gotham Book";
+  font-size: 15px;
+  line-height: 25px;
+}
+.subscribe-col input:focus, .subscribe-col button:focus {
+  outline: none;
+}
+.subscribe-col form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px;
+}
+.subscribe-col input {
+  flex-grow: 1;
+  font-family: "Gotham Book Italic";
+  padding: 0.5em 0.75em;
+  border: 2px solid #959595;
+  background: none;
+  color: #959595;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.subscribe-col button {
+  background: #F26E34;
+  color: white;
+  padding: 0.5em 0.75em;
+  text-transform: uppercase;
+  font-family: "Gotham Bold";
+}
+.subscribe-col button:hover, .subscribe-col button:focus {
+  background: #8d837a;
+}
+
+.social-col {
+  background-color: #e0dfdf;
+}
+
+ul.social-media-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.social-media-list li {
+  display: inline-block;
+}
+ul.social-media-list img {
+  padding: 3px;
+  border-radius: 5px;
+  width: 38px;
+  height: 38px;
+}
+
+ul.social-media-list-profile {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.social-media-list-profile li {
+  display: inline-block;
+}
+ul.social-media-list-profile img {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.text-primarycolor {
+  color: #F26E34 !important;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.lightbox {
+  display: none;
+  background: none;
+}
+
+/* override default feather style... */
+.fixwidth {
+  background: none;
+}
+
+.fixwidth .featherlight-content {
+  background: none;
+  padding-left: 80px;
+}
+
+.fixwidth .featherlight-close {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+
+.delay-1 {
+  animation-delay: 0.25s;
+}
+
+.delay-2 {
+  animation-delay: 0.5s;
+}
+
+.delay-3 {
+  animation-delay: 0.75s;
+}
+
+.delay-4 {
+  animation-delay: 1s;
+}
+
+/* Media queries */
+@media (max-width: 1199px) {
+  .marquee-text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .marquee-text {
+    font-size: 13px;
+  }
+
+  .subscribe-col {
+    display: none;
+  }
+
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 8rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 4rem;
+    text-align: center;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+
+  .country-list {
+    justify-content: space-between;
+    margin-top: -20px;
+    background: #f1f1f1;
+  }
+
+  .list-p {
+    width: 33.33333%;
+  }
+  .list-p p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .reference-div {
+    text-align: center;
+  }
+
+  .bracket-v {
+    display: none;
+  }
+
+  .bracket-h {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .item-view {
+    flex: 100%;
+  }
+
+  .bbn-col, .social-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  header.masthead {
+    padding-top: calc(8rem + 55px);
+    padding-bottom: 8rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  header.masthead {
+    padding-top: calc(8rem + 55px);
+    padding-bottom: 8rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bbn-col span {
+    font-size: 1em;
+  }
+
+  .bbn-icon {
+    width: 170px;
+  }
+
+  .list-p p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .bbn-col span {
+    font-size: 0.8em;
+  }
+
+  .bbn-icon {
+    width: 120px;
+  }
+}
+
+/*# sourceMappingURL=bbn.css.map */
